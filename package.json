@@ -1,0 +1,31 @@
+{
+  "name": "schuettemark.us",
+  "version": "1.0.0",
+  "description": "Markus Schuette Personal Website",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schuettemarkus/schuettemark.us.git"
+  },
+  "author": "Markus Schuette",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/schuettemarkus/schuettemark.us/issues"
+  },
+  "homepage": "https://github.com/schuettemarkus/schuettemark.us#readme",
+  "devDependencies": {
+    "browser-sync": "^2.12.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-front-matter": "^1.3.0",
+    "gulp-hb": "^2.6.5",
+    "gulp-load-plugins": "^1.2.3",
+    "gulp-sass": "^2.3.1",
+    "handlebars-layouts": "^3.1.3"
+  }
+}
