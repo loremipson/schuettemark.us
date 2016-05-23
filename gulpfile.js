@@ -10,7 +10,6 @@ var sources = {
 
 var dest = './build/';
 
-
 gulp.task('html', function(){
     return gulp.src(sources.html)
       .pipe($.frontMatter({
@@ -26,17 +25,15 @@ gulp.task('html', function(){
             './_src/markup/_partials/**/*.hbs',
         ],
         parseDataName: function(file){
-            return path.basename(file.shortpath)
+            return path.basename(file.shortPath)
         },
         parsePartialName: function(file){
-            return path.basename(file.shortpath)
+            return path.basename(file.shortPath)
         },
         parseHelperName: function(file){
-            return path.basename(file.shortpath)
+            return path.basename(file.shortPath)
         },
       }))
-      // Write error function
-      .on('error', console.log(err))
       .pipe(gulp.dest(dest))
       .pipe(sync.reload({stream: true}));
 });
@@ -51,3 +48,4 @@ gulp.task('sass', function() {
         .pipe(sync.reload({stream: true}));
 });
 
+gulp.task('default', ['html', 'sass']);
